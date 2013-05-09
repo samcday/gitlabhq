@@ -32,6 +32,7 @@ class SystemHooksService
       })
     when User
       data.merge!({
+        id: model.id,
         name: model.name,
         email: model.email
       })
